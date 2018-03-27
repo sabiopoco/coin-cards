@@ -1,28 +1,83 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin-top: 2rem;
+  font-family: 'Lato', sans-serif;
+  background: #898989;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.1rem;
+}
+.card {
+  position: relative;
+  background: #0089c3;
+  max-width: 20rem;
+  margin: 0rem auto 2rem;
+  border: solid 5px #07a;
+  border-radius: 0.4rem;
+}
+.card__avatar_url {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+  height: auto;
   text-align: center;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  background: #07a;
+  padding: 5px;
+  max-width: 100%;
+  transition: 0.2s;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.card__avatar_url:hover {
+  background: #006590;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.card__top {
+  margin: 3px;
+  border: solid 5px #07a;
+  background-color: #fff;
+  border-radius: 2rem;
 }
-
-.App-title {
-  font-size: 1.5em;
+.card__middle {
+  margin-top: 175px;
 }
-
-.App-intro {
-  font-size: large;
+.card__reponame {
+  font-size: 1rem;
+  padding: 5px;
+  text-align: left;
+  margin: auto;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.card__link {
+  color: #000;
+  text-decoration: none;
+}
+.card__link:hover {
+  opacity: 0.8;
+}
+.card__notfound {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+dl {
+  margin: 0;
+  padding: 0;
+}
+dt {
+  text-align: left;
+}
+dd {
+  text-align: left;
+}
+dt {
+  font-weight: 900;
+  margin-bottom: 0.2rem;
+}
+dd {
+  margin: 0 0 1rem 0;
 }

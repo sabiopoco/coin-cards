@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactGridLayout from 'react-grid-layout';
 import Card from './Card.js';
-import './App.styl';
+import './App.css';
 
 const ResponsiveReactGridLayout = ReactGridLayout.WidthProvider(ReactGridLayout.Responsive);
 
