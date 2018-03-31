@@ -5,8 +5,8 @@ import './App.css';
 
 const ResponsiveReactGridLayout = ReactGridLayout.WidthProvider(ReactGridLayout.Responsive);
 
-const cardWidth = 2.5
-const cardHeight = 3.5
+const cardWidth = 2.5;
+const cardHeight = 3.5;
 
 class Grid extends Component {
     render() {

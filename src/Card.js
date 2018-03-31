@@ -85,14 +85,8 @@ class Card extends Component {
             .catch((err) => console.log('oh no!') );
     }
 
-    fetchRepo(repoName) {
-        let url = `https://api.github.com/repos/${repoName}`
-        this.fetchRepoApi(url)
-    }
-
     componentDidMount() {
-        let url = `https://api.github.com/repos/${this.props.repo}`
-        //console.log(url)
+        let url = `https://api.github.com/repos/${this.state.repoName}`;
         this.fetchRepoApi(url)
     }
 }
