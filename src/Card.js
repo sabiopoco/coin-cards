@@ -31,7 +31,7 @@ class Card extends Component {
                             <a className="card__link" href={data.url} target="_blank">{data.repoName}</a></h2>
                     </div>
                     <a href={data.homepage} target="_blank">
-                        <img className="card__avatar_url" src={data.avatar_url} alt={data.repoName}/>
+                        <CardFront image={this.state}/>
                     </a>
 
                     <div className="card__middle">
@@ -88,6 +88,27 @@ class Card extends Component {
     componentDidMount() {
         let url = `https://api.github.com/repos/${this.state.repoName}`;
         this.fetchRepoApi(url)
+    }
+}
+
+//TODO Make boilerplate classes stateless
+class CardFront extends Component {
+    render(){
+        const image = this.props.image
+        return(
+            <div className="card__front">
+                <img className="card__avatar_url" src={image.avatar_url} alt={image.repoName}/>
+            </div>
+        )
+    }
+}
+
+class CardBack extends Component {
+    render(){
+        const gitInfo = this.props.gitInfo
+        return(
+            <div></div>
+        )
     }
 }
 
