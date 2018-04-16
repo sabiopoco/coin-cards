@@ -31,7 +31,7 @@ class Card extends Component {
                             <a className="card__link" href={data.url} target="_blank">{data.repoName}</a></h2>
                     </div>
                     <a href={data.homepage} target="_blank">
-                        <img className="card__avatar_url" src={data.avatar_url} alt={""}/>
+                        <img className="card__avatar_url" src={data.avatar_url} alt={data.repoName}/>
                     </a>
 
                     <div className="card__middle">
